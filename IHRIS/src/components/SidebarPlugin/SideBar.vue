@@ -46,7 +46,7 @@
     props: {
       title: {
         type: String,
-        default: "IHRIS"
+        default: "KHIS"
       },
       backgroundColor: {
         type: String,

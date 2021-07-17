@@ -37,43 +37,43 @@
         },
         {
           "id": 2,
-          "name": "Minerva Hooper",
-          "county": "Kakamega",
-          "facility": "Kach-A",
-          "cadre": "Health Officer",
-          "gender": "Male"
+          "name": "Kelvin Mucheru",
+          "county": "Mombasa",
+          "facility": "Ngumba",
+          "cadre": "Chief Officer",
+          "gender": "Female"
         },
         {
           "id": 3,
-          "name": "Sage Rodriguez",
-          "county": "Kakamega",
-          "facility": "Kach-A",
-          "cadre": "Health Officer",
+          "name": "John Kamau",
+          "county": "Nairobi",
+          "facility": "Nyr-C",
+          "cadre": "Chief Officer",
           "gender": "Male"
         },
         {
           "id": 4,
-          "name": "Philip Chaney",
-          "county": "Kakamega",
-          "facility": "Kach-A",
-          "cadre": "Health Officer",
+          "name": "William Waweru",
+          "county": "Kitale",
+          "facility": "Ulanda",
+          "cadre": "HR Ofiicer",
           "gender": "Male"
         },
         {
           "id": 5,
-          "name": "Doris Greene",
-          "county": "Kakamega",
-          "facility": "Kach-A",
-          "cadre": "Health Officer",
-          "gender": "Male"
+          "name": "Doris Atieno",
+          "county": "Kilifi",
+          "facility": "Kach-B",
+          "cadre": "HR Officer",
+          "gender": "Female"
         },
         {
           "id": 6,
-          "name": "Mason Porter",
-          "county": "Kakamega",
-          "facility": "Kach-A",
+          "name": "Sharon Masingu",
+          "county": "Nyeri",
+          "facility": "Doct",
           "cadre": "Health Officer",
-          "gender": "Male"
+          "gender": "Female"
         },
         {
           "id": 7,
@@ -119,7 +119,7 @@
     ]
   },
   "sidebar": {
-    "title": "IHRIS",
+    "title": "KHIS",
     "shortTitle": "CT",
     "dashboard": "dashboard",
     "icons": "Icons",
