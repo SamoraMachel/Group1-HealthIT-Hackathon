@@ -10,6 +10,8 @@
                 <h5 class="card-category">{{$t('dashboard.totalShipments')}}</h5>
                 <h2 class="card-title">{{$t('dashboard.performance')}}</h2>
               </div>
+
+              <!-- First Graph -->
               <div class="col-sm-6">
                 <div class="btn-group btn-group-toggle"
                      :class="isRTL ? 'float-left' : 'float-right'"
@@ -47,9 +49,11 @@
         <card type="chart">
           <template slot="header">
             <h5 class="card-category">{{$t('dashboard.totalShipments')}}</h5>
-            <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary "></i> 763,215</h3>
           </template>
           <div class="chart-area">
+
+           
+            <!-- Second Graph -->
             <line-chart style="height: 100%"
                         chart-id="purple-line-chart"
                         :chart-data="purpleLineChart.chartData"
@@ -63,10 +67,12 @@
       <div class="col-lg-4" :class="{'text-right': isRTL}">
         <card type="chart">
           <template slot="header">
-            <h5 class="card-category">{{$t('dashboard.dailySales')}}</h5>
-            <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info "></i> 3,500€</h3>
+            <h5 class="card-category">{{$t('dashboard.healthPerRegion')}}</h5>
+              
           </template>
           <div class="chart-area">
+
+            <!-- Third Graph -->
             <bar-chart style="height: 100%"
                        chart-id="blue-bar-chart"
                        :chart-data="blueBarChart.chartData"
@@ -78,17 +84,35 @@
       </div>
       <div class="col-lg-4" :class="{'text-right': isRTL}">
         <card type="chart">
+          
           <template slot="header">
-            <h5 class="card-category">{{$t('dashboard.completedTasks')}}</h5>
-            <h3 class="card-title"><i class="tim-icons icon-send text-success "></i> 12,100K</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <h5 class="card-category">{{$t('dashboard.cadrePerRegion')}}</h5>
+              </div>
+
+              <div class="col-lg-6 "> 
+                <label for="cadre"> Choose Cadre : </label>
+                <select name="Cadre btn-group btn-group-toggle" id="cadre">
+                  <option value="Health Officer" class="btn btn-sm btn-simple"> Health Officer</option>
+                  <option value="Health Officer" class="btn btn-sm btn-simple"> Chief Officer</option>
+                  <option value="Health Officer" class="btn btn-sm btn-simple"> HR Officer</option>
+                  
+                </select>
+              </div>
+            </div>
+
+
           </template>
           <div class="chart-area">
-            <line-chart style="height: 100%"
+
+            <!-- Fourth Graph -->
+            <bar-chart style="height: 100%"
                         chart-id="green-line-chart"
                         :chart-data="greenLineChart.chartData"
                         :gradient-stops="greenLineChart.gradientStops"
                         :extra-options="greenLineChart.extraOptions">
-            </line-chart>
+            </bar-chart>
           </div>
         </card>
       </div>
@@ -145,14 +169,19 @@
       return {
         bigLineChart: {
           allData: [
-            [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
-            [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
-            [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130]
+            [2001, 2005, 2003, 2005, 2007, 2010, 2015, 2006, 2009, 2016, 2011, 2017],
+            [2011, 2003, 2001, 2010, 2008, 2013, 2015, 2006, 2001, 2009, 2016, 2005],
+            [2009, 2005, 2010, 2015, 2003, 2007, 2011, 2001, 2013, 2006, 2007, 2012]
           ],
           activeIndex: 0,
           chartData: {
             datasets: [{ }],
-            labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+            labels: ['Kakamega', 'Migori', 'Nairobi', 'Meru', 'Kitale', 'Kilifi', 'Malindi', 'Kisumu', 'Voi', 'Mombasa', 'Nyeri', 'Turkana'],
+          },
+          scales: {
+            yAxis: {
+              min: 2000
+            }
           },
           extraOptions: chartConfigs.purpleChartOptions,
           gradientColors: config.colors.primaryGradient,
@@ -184,11 +213,11 @@
           gradientStops: [1, 0.2, 0],
         },
         greenLineChart: {
-          extraOptions: chartConfigs.greenChartOptions,
+          extraOptions: chartConfigs.barChartOptions,
           chartData: {
-            labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV'],
+            labels: ['Kach', 'Mig', 'Nai', 'Meru', 'Kit', 'Kil', 'Mal', 'Kis', 'Voi', 'Mom', 'Nyr', 'Tur'],
             datasets: [{
-              label: "My First dataset",
+              label: "Cadre",
               fill: true,
               borderColor: config.colors.danger,
               borderWidth: 2,
@@ -201,7 +230,7 @@
               pointHoverRadius: 4,
               pointHoverBorderWidth: 15,
               pointRadius: 4,
-              data: [90, 27, 60, 12, 80],
+              data: [15, 17, 3, 10, 16, 9, 11, 7, 9, 5, 12, 4],
             }]
           },
           gradientColors: ['rgba(66,134,121,0.15)', 'rgba(66,134,121,0.0)', 'rgba(66,134,121,0)'],
@@ -210,15 +239,15 @@
         blueBarChart: {
           extraOptions: chartConfigs.barChartOptions,
           chartData: {
-            labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
+            labels: ['Kach', 'Mig', 'Nai', 'Meru', 'Kit', 'Kil', 'Mal', 'Kis', 'Voi', 'Mom', 'Nyr', 'Tur'],
             datasets: [{
-              label: "Countries",
+              label: "Health Workers",
               fill: true,
               borderColor: config.colors.info,
               borderWidth: 2,
               borderDash: [],
               borderDashOffset: 0.0,
-              data: [53, 20, 10, 80, 100, 45],
+              data: [53, 20, 10, 33, 67, 45, 27, 54, 12, 34, 23, 45],
             }]
           },
           gradientColors: config.colors.primaryGradient,
@@ -253,9 +282,10 @@
             pointHoverRadius: 4,
             pointHoverBorderWidth: 15,
             pointRadius: 4,
-            data: this.bigLineChart.allData[index]
+            data: this.bigLineChart.allData[index],
+            options: this.bigLineChart.scales
           }],
-          labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+          labels: ['Kakamega', 'Migori', 'Nairobi', 'Meru', 'Kitale', 'Kilifi', 'Malindi', 'Kisumu', 'Voi', 'Mombasa', 'Nyeri', 'Turkana'],
         }
         this.$refs.bigChart.updateGradients(chartData);
         this.bigLineChart.chartData = chartData;

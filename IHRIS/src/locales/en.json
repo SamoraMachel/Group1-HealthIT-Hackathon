@@ -1,14 +1,14 @@
 {
   "dashboard": {
-    "completedTasks": "Completed Tasks",
-    "dailySales": "Daily Sales",
-    "performance": "Performance",
-    "simpleTable": "Simple Table",
+    "cadrePerRegion": "No of Cadre Per Region",
+    "healthPerRegion": "No of Health Worker Per Region",
+    "performance": "Health Worker WorkStation",
+    "simpleTable": "Employee Table",
     "totalShipments": "Total Shipments",
     "chartCategories": [
-      "Accounts",
-      "Purchases",
-      "Sessions"
+      "HRIO",
+      "Chief Officer",
+      "HR Officer"
     ],
     "tasks": "Tasks({count})",
     "today": "Today",
@@ -21,59 +21,67 @@
       "title": "Simple Table",
       "columns": [
         "Name",
-        "Country",
-        "City",
-        "Salary"
+        "Gender",
+        "County",
+        "Facility",
+        "Cadre"
       ],
       "data": [
         {
           "id": 1,
           "name": "Dakota Rice",
-          "salary": "$36.738",
-          "country": "Niger",
-          "city": "Oud-Turnhout"
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
         },
         {
           "id": 2,
           "name": "Minerva Hooper",
-          "salary": "$23,789",
-          "country": "Curaçao",
-          "city": "Sinaai-Waas"
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
         },
         {
           "id": 3,
           "name": "Sage Rodriguez",
-          "salary": "$56,142",
-          "country": "Netherlands",
-          "city": "Baileux"
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
         },
         {
           "id": 4,
           "name": "Philip Chaney",
-          "salary": "$38,735",
-          "country": "Korea, South",
-          "city": "Overland Park"
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
         },
         {
           "id": 5,
           "name": "Doris Greene",
-          "salary": "$63,542",
-          "country": "Malawi",
-          "city": "Feldkirchen in Kärnten"
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
         },
         {
           "id": 6,
           "name": "Mason Porter",
-          "salary": "$98,615",
-          "country": "Chile",
-          "city": "Gloucester"
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
         },
         {
           "id": 7,
           "name": "Jon Porter",
-          "salary": "$78,615",
-          "country": "Portugal",
-          "city": "Gloucester"
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
         }
       ]
     },
@@ -111,14 +119,14 @@
     ]
   },
   "sidebar": {
-    "title": "Creative Tim",
+    "title": "IHRIS",
     "shortTitle": "CT",
     "dashboard": "dashboard",
     "icons": "Icons",
     "maps": "Maps",
     "notifications": "Notifications",
-    "userProfile": "User Profile",
-    "tableList": "Table List",
+    "userProfile": "Health Workers",
+    "tableList": "Cadre",
     "typography": "Typography",
     "rtlSupport": "RTL Support"
   }

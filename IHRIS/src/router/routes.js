@@ -19,7 +19,7 @@ const routes = [
     children: [
       {
         path: "dashboard",
-        name: "dashboard",
+        name: "KHIS Analytics Dashboard",
         component: Dashboard
       },
       {
