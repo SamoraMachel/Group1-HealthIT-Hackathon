@@ -14,7 +14,7 @@
               <div class="col-sm-6">
                 <div class="btn-group btn-group-toggle"
                      :class="isRTL ? 'float-left' : 'float-right'"
-                     data-toggle="buttons">
+                     data-toggle="buttons">    
                   <label v-for="(option, index) in bigLineChartCategories"
                          :key="option"
                          class="btn btn-sm btn-primary btn-simple"
@@ -144,21 +144,10 @@
           activeIndex: 0,
           chartData: {
             datasets: [{ }],
+            
             labels: ['Kakamega', 'Migori', 'Nairobi', 'Meru', 'Kitale', 'Kilifi', 'Malindi', 'Kisumu', 'Voi', 'Mombasa', 'Nyeri', 'Turkana'],
           },
-          options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:false
-                    },
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Temperature'
-                    }
-                }]
-            },
-          },
+          
           extraOptions: chartConfigs.purpleChartOptions,
           gradientColors: config.colors.primaryGradient,
           gradientStops: [1, 0.4, 0],
@@ -183,7 +172,8 @@
               pointHoverBorderWidth: 15,
               pointRadius: 4,
               data: [80, 100, 70, 80, 120, 80],
-            }]
+            }],
+              
           },
           gradientColors: config.colors.primaryGradient,
           gradientStops: [1, 0.2, 0],
@@ -263,9 +253,27 @@
           options: this.bigLineChart.options,
           labels: ['Kakamega', 'Migori', 'Nairobi', 'Meru', 'Kitale', 'Kilifi', 'Malindi', 'Kisumu', 'Voi', 'Mombasa', 'Nyeri', 'Turkana'],
         }
+        let options = {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Temperature'
+                    },
+                    scaleOverride: true,
+                    scaleSteps: 1000,
+                    scaleStepWidth: 10,
+                    scaleStartValue: 2000
+                }]
+            },
+          }
         this.$refs.bigChart.updateGradients(chartData);
         this.bigLineChart.chartData = chartData;
         this.bigLineChart.activeIndex = index;
+        this.bigLineChart.options=options
       }
     },
     mounted() {

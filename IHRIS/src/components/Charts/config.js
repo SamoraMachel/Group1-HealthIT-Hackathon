@@ -61,20 +61,27 @@ export let purpleChartOptions = {
     intersect: 0,
     position: "nearest"
   },
+
   scales: {
     yAxes: [{
       barPercentage: 1.6,
+
       gridLines: {
         drawBorder: false,
         color: 'rgba(29,140,248,0.0)',
         zeroLineColor: "transparent",
       },
       ticks: {
-        suggestedMin: 60,
-        suggestedMax: 125,
+        suggestedMin: 2000,
+        suggestedMax: 2020,
         padding: 20,
-        fontColor: "#9a9a9a"
-      }
+        fontColor: "#9a9a9a",
+        beginAtZero:false
+      },
+      scaleOverride: true,
+      scaleSteps: 1000,
+      scaleStepWidth: 100,
+      scaleStartValue: 2000
     }],
 
     xAxes: [{

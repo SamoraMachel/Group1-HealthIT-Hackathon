@@ -95,8 +95,10 @@
         </base-input>
       </div>
     </div>
-    
-    <base-button id="save" slot="footer" type="primary" @click="openModal()" fill>Save</base-button>
+  
+    <a href="#/dashboard">
+      <base-button id="save" slot="footer" type="primary" fill>Save</base-button>
+    </a>
   </card>
 
   <div class="modal fade" id="save" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -125,9 +127,9 @@
           return {};
         }
       },
-      methods() {
-        function openModal() {
-          $('#save').modal('show')
+      methods: {
+        openModal: function () {
+          alert("Data Saved")
         }
       }
     }
