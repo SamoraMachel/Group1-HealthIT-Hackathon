@@ -1,12 +1,12 @@
 <template>
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <edit-profile-form :model="model">
       </edit-profile-form>
     </div>
-    <div class="col-md-4">
+    <!-- <div class="col-md-4">
       <user-card :user="user"></user-card>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -20,11 +20,11 @@
     data() {
       return {
         model: {
-          company: 'Creative Code Inc.',
-          email: 'mike@email.com',
-          username: 'michael23',
-          firstName: 'Mike',
-          lastName: 'Andrew',
+          company: '',
+          email: '',
+          username: '',
+          firstName: '',
+          lastName: '',
           address: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
           city: 'Melbourne',
           country: 'Australia',
