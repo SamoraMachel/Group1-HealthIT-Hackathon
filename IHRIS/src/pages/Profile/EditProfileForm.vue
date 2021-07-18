@@ -84,7 +84,7 @@
     <div class="row">
       <div class="col-md-6 pr-md-1">
         <base-input label="Facility Name"
-                  v-model="model.DOE"
+                  v-model="model.facilityName"
                   placeholder="Facility Name">
         </base-input>
       </div>
