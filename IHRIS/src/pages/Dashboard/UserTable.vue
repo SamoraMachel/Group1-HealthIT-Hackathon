@@ -1,6 +1,6 @@
 <template>
-  <base-table :data="table.data"
-              :columns="table.columns"
+  <base-table :data="table.facility"
+              :columns="table.facilityColumns"
               thead-classes="text-primary">
   </base-table>
 </template>

@@ -4,6 +4,8 @@
     "healthPerRegion": "No of Health Worker Per Region",
     "performance": "Health Worker WorkStation",
     "simpleTable": "Employee Table",
+    "cadreTable":"Cadre Table",
+    "facilityTable": "Facility Table",
     "totalShipments": "Total Shipments",
     "chartCategories": [
       "HRIO",
@@ -18,6 +20,73 @@
       "somethingElse": "Something else"
     },
     "usersTable": {
+      "cadreColumns": [
+        "ID",
+        "Title",
+        "Quantity"
+      ],
+      "cadre": [
+        {
+          "id": 1,
+          "title": "Health Officer",
+          "quantity": 68
+        },
+        {
+          "id": 2,
+          "title": "HR Officer",
+          "quantity": 57
+        },
+        {
+          "id": 3,
+          "title": "Chief Officer",
+          "quantity": 78
+        }
+
+      ],
+      "facilityColumns": [
+        "ID",
+        "Name",
+        "Code",
+        "Station"
+      ],
+      "facility": [
+        {
+          "id":1,
+          "name": "Kach-A",
+          "code": "ka-21",
+          "station": "Kakamega"
+        },
+        {
+          "id":2,
+          "name": "Nyr-C",
+          "code": "cf-2",
+          "station": "Nyeri"
+        },
+        {
+          "id":3,
+          "name": "Ngumba",
+          "code": "rhi-9",
+          "station": "Nairobi"
+        },
+        {
+          "id":4,
+          "name": "Kach-B",
+          "code": "zx-2",
+          "station": "Kakamega"
+        },
+        {
+          "id":5,
+          "name": "Doct",
+          "code": "fr-56",
+          "station": "Mombasa"
+        },
+        {
+          "id":6,
+          "name": "Ulanda",
+          "code": "mig-0",
+          "station": "Migori"
+        }
+      ],
       "title": "Simple Table",
       "columns": [
         "Name",
@@ -26,6 +95,7 @@
         "Facility",
         "Cadre"
       ],
+      
       "data": [
         {
           "id": 1,
