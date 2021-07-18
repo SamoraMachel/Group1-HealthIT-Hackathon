@@ -54,7 +54,6 @@
       </div>
       <div class="col-md-4 px-md-1">
         <base-input label="Employer"
-                  v-model="model.employer"
                   placeholder="Empoloyer (GoK/MoH) (FBO/NGO)">
         </base-input>
       </div>
@@ -74,7 +73,6 @@
       </div>
       <div class="col-md-6 px-md-1">
         <base-input label="Job Designation"
-                  v-model="model.employer"
                   placeholder="Job Designation">
         </base-input>
       </div>
@@ -88,7 +86,6 @@
       </div>
       <div class="col-md-6 px-md-1">
         <base-input label="Current County of work"
-                  v-model="model.employer"
                   placeholder="Work Station">
         </base-input>
       </div>
