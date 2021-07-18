@@ -1,12 +1,12 @@
 {
   "dashboard": {
     "cadrePerRegion": "No of Cadre Per Region",
-    "healthPerRegion": "No of Health Worker Per Region",
-    "performance": "Health Worker WorkStation",
+    "healthPerRegion": "No of Health Workers Per Region",
+    "performance": "Health Worker WorkStations",
     "simpleTable": "Employee Table",
     "cadreTable":"Cadre Table",
     "facilityTable": "Facility Table",
-    "totalShipments": "Total Shipments",
+    "totalShipments": "Total Workstations",
     "chartCategories": [
       "HRIO",
       "Chief Officer",

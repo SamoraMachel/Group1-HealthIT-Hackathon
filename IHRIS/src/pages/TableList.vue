@@ -26,56 +26,56 @@
 </template>
 <script>
 import { BaseTable } from "@/components";
-const tableColumns = ["Name", "Country", "City", "Salary"];
+const tableColumns = ["Name", "County", "Work Station", "Salary"];
 const tableData = [
   {
     id: 1,
-    name: "Dakota Rice",
-    salary: "$36.738",
-    country: "Niger",
-    city: "Oud-Turnhout",
+    name: "John Rice",
+    salary: "Khs36.738",
+    county: "Mig",
+    Work_station: "Homabay",
   },
   {
     id: 2,
-    name: "Minerva Hooper",
-    salary: "$23,789",
-    country: "Curaçao",
-    city: "Sinaai-Waas"
+    name: "Llian Amolo",
+    salary: "KSh23,789",
+    county: "Kisumu",
+    Work_station: "Kakamega"
   },
   {
     id: 3,
-    name: "Sage Rodriguez",
-    salary: "$56,142",
-    country: "Netherlands",
-    city: "Baileux"
+    name: "Sara Wairimu",
+    salary: "Khs56,142",
+    county: "Nairobi",
+    Work_station: "Nyeri"
   },
   {
     id: 4,
-    name: "Philip Chaney",
-    salary: "$38,735",
-    country: "Korea, South",
-    city: "Overland Park"
+    name: "Philip Wafula",
+    salary: "Khs38,735",
+    county: "Bungoma",
+    work_station: "Nandi"
   },
   {
     id: 5,
-    name: "Doris Greene",
-    salary: "$63,542",
-    country: "Malawi",
-    city: "Feldkirchen in Kärnten"
+    name: "Doris Maira",
+    salary: "Khs63,542",
+    country: "Kisii",
+    work_station: "Migori"
   },
   {
     id: 6,
-    name: 'Mason Porter',
-    salary: '$98,615',
-    country: 'Chile',
-    city: 'Gloucester'
+    name: 'Mason Juma',
+    salary: 'Khs 98,615',
+    county: 'Vihiga',
+    work_station: 'Busia'
   },
   {
     id: 7,
-    name: 'Jon Porter',
-    salary: '$78,615',
-    country: 'Portugal',
-    city: 'Gloucester'
+    name: 'Jon Juma',
+    salary: 'Khs78,615',
+    county: 'Busia',
+    work_station: 'Malindi'
   }
 ];
 
