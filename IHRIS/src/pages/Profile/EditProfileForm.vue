@@ -18,6 +18,7 @@
       </div>
       <div class="col-md-4 pl-md-1">
         <base-input label="Last Name"
+                  v-model="model.lastName"
                   placeholder="Last Name">
         </base-input>
       </div>
@@ -54,11 +55,13 @@
       </div>
       <div class="col-md-4 px-md-1">
         <base-input label="Employer"
+                  v-model="model.employer"
                   placeholder="Empoloyer (GoK/MoH) (FBO/NGO)">
         </base-input>
       </div>
       <div class="col-md-4 pl-md-1">
         <base-input label="Terms Of Employment"
+                  v-model="model.termOE"
                   placeholder="Terms Of Employment">
         </base-input>
       </div>
@@ -73,6 +76,7 @@
       </div>
       <div class="col-md-6 px-md-1">
         <base-input label="Job Designation"
+                  v-model="model.jobDeg"
                   placeholder="Job Designation">
         </base-input>
       </div>
@@ -86,6 +90,7 @@
       </div>
       <div class="col-md-6 px-md-1">
         <base-input label="Current County of work"
+                  v-model="model.currentCounty"
                   placeholder="Work Station">
         </base-input>
       </div>
