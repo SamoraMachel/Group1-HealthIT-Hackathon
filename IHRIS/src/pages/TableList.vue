@@ -80,6 +80,62 @@ const tableData = [
     facility: "Kach-A",
     cadre: "Health Officer",
     gender: "Male"
+  },
+  {
+    id: 8,
+    name: "Dakota Rice",
+    county: "Kakamega",
+    facility: "Kach-A",
+    cadre: "Health Officer",
+    gender: "Male"
+  },
+  {
+    id: 9,
+    name: "Kelvin Mucheru",
+    county: "Mombasa",
+    facility: "Ngumba",
+    cadre: "Chief Officer",
+    gender: "Female"
+  },
+  {
+    id: 10,
+    name: "John Kamau",
+    county: "Nairobi",
+    facility: "Nyr-C",
+    cadre: "Chief Officer",
+    gender: "Male"
+  },
+  {
+    id: 11,
+    name: "William Waweru",
+    county: "Kitale",
+    facility: "Ulanda",
+    cadre: "HR Ofiicer",
+    gender: "Male"
+  },
+  {
+    id: 12,
+    name: "Doris Atieno",
+    county: "Kilifi",
+    facility: "Kach-B",
+    cadre: "HR Officer",
+    gender: "Female"
+  },
+  {
+    id: 13,
+    name: "Sharon Masingu",
+    county: "Nyeri",
+    facility: "Doct",
+    cadre: "Health Officer",
+    gender: "Female"
+  },
+  {
+    id: 14,
+    name: "Jon Porter",
+    county: "Kakamega",
+    facility: "Kach-A",
+    cadre: "Health Officer",
+    gender: "Male"
   }
 ];
 
