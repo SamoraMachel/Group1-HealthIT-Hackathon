@@ -7,7 +7,6 @@
           <template slot="header">
             <div class="row">
               <div class="col-sm-6" :class="isRTL ? 'text-right' : 'text-left'">
-                <h5 class="card-category">{{$t('dashboard.totalShipments')}}</h5>
                 <h2 class="card-title">{{$t('dashboard.performance')}}</h2>
               </div>
 
@@ -45,26 +44,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4" :class="{'text-right': isRTL}">
-        <card type="chart">
-          <template slot="header">
-            <h5 class="card-category">{{$t('dashboard.totalShipments')}}</h5>
-          </template>
-          <div class="chart-area">
-
-           
-            <!-- Second Graph -->
-            <line-chart style="height: 100%"
-                        chart-id="purple-line-chart"
-                        :chart-data="purpleLineChart.chartData"
-                        :gradient-colors="purpleLineChart.gradientColors"
-                        :gradient-stops="purpleLineChart.gradientStops"
-                        :extra-options="purpleLineChart.extraOptions">
-            </line-chart>
-          </div>
-        </card>
-      </div>
-      <div class="col-lg-4" :class="{'text-right': isRTL}">
+      
+      <div class="col-lg-6" :class="{'text-right': isRTL}">
         <card type="chart">
           <template slot="header">
             <h5 class="card-category">{{$t('dashboard.healthPerRegion')}}</h5>
@@ -82,7 +63,7 @@
           </div>
         </card>
       </div>
-      <div class="col-lg-4" :class="{'text-right': isRTL}">
+      <div class="col-lg-6" :class="{'text-right': isRTL}">
         <card type="chart">
           
           <template slot="header">
@@ -165,10 +146,18 @@
             datasets: [{ }],
             labels: ['Kakamega', 'Migori', 'Nairobi', 'Meru', 'Kitale', 'Kilifi', 'Malindi', 'Kisumu', 'Voi', 'Mombasa', 'Nyeri', 'Turkana'],
           },
-          scales: {
-            yAxis: {
-              min: 2000
-            }
+          options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Temperature'
+                    }
+                }]
+            },
           },
           extraOptions: chartConfigs.purpleChartOptions,
           gradientColors: config.colors.primaryGradient,
@@ -270,8 +259,8 @@
             pointHoverBorderWidth: 15,
             pointRadius: 4,
             data: this.bigLineChart.allData[index],
-            options: this.bigLineChart.scales
           }],
+          options: this.bigLineChart.options,
           labels: ['Kakamega', 'Migori', 'Nairobi', 'Meru', 'Kitale', 'Kilifi', 'Malindi', 'Kisumu', 'Voi', 'Mombasa', 'Nyeri', 'Turkana'],
         }
         this.$refs.bigChart.updateGradients(chartData);

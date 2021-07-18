@@ -11,71 +11,75 @@
         </card>
       </div>
 
-      <div class="col-12">
-        <card class="card-plain">
-          <div class="table-full-width table-responsive">
-            <base-table :title="table2.title" :sub-title="table2.subTitle" :data="table2.data"
-                         :columns="table2.columns">
-
-            </base-table>
-          </div>
-        </card>
-      </div>
+      
 
     </div>
 </template>
 <script>
 import { BaseTable } from "@/components";
-const tableColumns = ["Name", "Country", "City", "Salary"];
+const tableColumns = [
+        "Name",
+        "Gender",
+        "County",
+        "Facility",
+        "Cadre"
+      ];
 const tableData = [
   {
     id: 1,
     name: "Dakota Rice",
-    salary: "$36.738",
-    country: "Niger",
-    city: "Oud-Turnhout",
+    county: "Kakamega",
+    facility: "Kach-A",
+    cadre: "Health Officer",
+    gender: "Male"
   },
   {
     id: 2,
-    name: "Minerva Hooper",
-    salary: "$23,789",
-    country: "Curaçao",
-    city: "Sinaai-Waas"
+    name: "Kelvin Mucheru",
+    county: "Mombasa",
+    facility: "Ngumba",
+    cadre: "Chief Officer",
+    gender: "Female"
   },
   {
     id: 3,
-    name: "Sage Rodriguez",
-    salary: "$56,142",
-    country: "Netherlands",
-    city: "Baileux"
+    name: "John Kamau",
+    county: "Nairobi",
+    facility: "Nyr-C",
+    cadre: "Chief Officer",
+    gender: "Male"
   },
   {
     id: 4,
-    name: "Philip Chaney",
-    salary: "$38,735",
-    country: "Korea, South",
-    city: "Overland Park"
+    name: "William Waweru",
+    county: "Kitale",
+    facility: "Ulanda",
+    cadre: "HR Ofiicer",
+    gender: "Male"
   },
   {
     id: 5,
-    name: "Doris Greene",
-    salary: "$63,542",
-    country: "Malawi",
-    city: "Feldkirchen in Kärnten"
+    name: "Doris Atieno",
+    county: "Kilifi",
+    facility: "Kach-B",
+    cadre: "HR Officer",
+    gender: "Female"
   },
   {
     id: 6,
-    name: 'Mason Porter',
-    salary: '$98,615',
-    country: 'Chile',
-    city: 'Gloucester'
+    name: "Sharon Masingu",
+    county: "Nyeri",
+    facility: "Doct",
+    cadre: "Health Officer",
+    gender: "Female"
   },
   {
     id: 7,
-    name: 'Jon Porter',
-    salary: '$78,615',
-    country: 'Portugal',
-    city: 'Gloucester'
+    name: "Jon Porter",
+    county: "Kakamega",
+    facility: "Kach-A",
+    cadre: "Health Officer",
+    gender: "Male"
   }
 ];
 
@@ -86,7 +90,7 @@ export default {
   data() {
     return {
       table1: {
-        title: "Simple Table",
+        title: "Employee Table",
         columns: [...tableColumns],
         data: [...tableData]
       },

@@ -195,8 +195,8 @@
     "icons": "Icons",
     "maps": "Maps",
     "notifications": "Notifications",
-    "userProfile": "Health Workers",
-    "tableList": "Cadre",
+    "userProfile": "Registration",
+    "tableList": "Employee Table",
     "typography": "Typography",
     "rtlSupport": "RTL Support"
   }
