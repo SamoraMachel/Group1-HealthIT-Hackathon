@@ -1,0 +1,203 @@
+{
+  "dashboard": {
+    "cadrePerRegion": "No of Cadre Per Region",
+    "healthPerRegion": "No of Health Worker Per Region",
+    "performance": "Health Worker WorkStation",
+    "simpleTable": "Employee Table",
+    "cadreTable":"Cadre Table",
+    "facilityTable": "Facility Table",
+    "totalShipments": "Total Shipments",
+    "chartCategories": [
+      "John Kamau",
+      "Doris Atieno",
+      "William Waweru"
+    ],
+    "tasks": "Tasks({count})",
+    "today": "Today",
+    "dropdown": {
+      "action": "Action",
+      "anotherAction": "Another Action",
+      "somethingElse": "Something else"
+    },
+    "usersTable": {
+      "cadreColumns": [
+        "ID",
+        "Title",
+        "Quantity"
+      ],
+      "cadre": [
+        {
+          "id": 1,
+          "title": "Health Officer",
+          "quantity": 68
+        },
+        {
+          "id": 2,
+          "title": "HR Officer",
+          "quantity": 57
+        },
+        {
+          "id": 3,
+          "title": "Chief Officer",
+          "quantity": 78
+        }
+
+      ],
+      "facilityColumns": [
+        "ID",
+        "Name",
+        "Code",
+        "Station"
+      ],
+      "facility": [
+        {
+          "id":1,
+          "name": "Kach-A",
+          "code": "ka-21",
+          "station": "Kakamega"
+        },
+        {
+          "id":2,
+          "name": "Nyr-C",
+          "code": "cf-2",
+          "station": "Nyeri"
+        },
+        {
+          "id":3,
+          "name": "Ngumba",
+          "code": "rhi-9",
+          "station": "Nairobi"
+        },
+        {
+          "id":4,
+          "name": "Kach-B",
+          "code": "zx-2",
+          "station": "Kakamega"
+        },
+        {
+          "id":5,
+          "name": "Doct",
+          "code": "fr-56",
+          "station": "Mombasa"
+        },
+        {
+          "id":6,
+          "name": "Ulanda",
+          "code": "mig-0",
+          "station": "Migori"
+        }
+      ],
+      "title": "Simple Table",
+      "columns": [
+        "Name",
+        "Gender",
+        "County",
+        "Facility",
+        "Cadre"
+      ],
+      
+      "data": [
+        {
+          "id": 1,
+          "name": "Dakota Rice",
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
+        },
+        {
+          "id": 2,
+          "name": "Kelvin Mucheru",
+          "county": "Mombasa",
+          "facility": "Ngumba",
+          "cadre": "Chief Officer",
+          "gender": "Female"
+        },
+        {
+          "id": 3,
+          "name": "John Kamau",
+          "county": "Nairobi",
+          "facility": "Nyr-C",
+          "cadre": "Chief Officer",
+          "gender": "Male"
+        },
+        {
+          "id": 4,
+          "name": "William Waweru",
+          "county": "Kitale",
+          "facility": "Ulanda",
+          "cadre": "HR Ofiicer",
+          "gender": "Male"
+        },
+        {
+          "id": 5,
+          "name": "Doris Atieno",
+          "county": "Kilifi",
+          "facility": "Kach-B",
+          "cadre": "HR Officer",
+          "gender": "Female"
+        },
+        {
+          "id": 6,
+          "name": "Sharon Masingu",
+          "county": "Nyeri",
+          "facility": "Doct",
+          "cadre": "Health Officer",
+          "gender": "Female"
+        },
+        {
+          "id": 7,
+          "name": "Jon Porter",
+          "county": "Kakamega",
+          "facility": "Kach-A",
+          "cadre": "Health Officer",
+          "gender": "Male"
+        }
+      ]
+    },
+    "taskList": [
+      {
+        "title": "Update the Documentation",
+        "description": "Dwuamish Head, Seattle, WA 8:47 AM",
+        "done": false
+      },
+      {
+        "title": "GDPR Compliance",
+        "description": "The GDPR is a regulation that requires businesses to protect the personal data and privacy of Europe citizens for transactions that occur within EU member states.",
+        "done": true
+      },
+      {
+        "title": "Solve the issues",
+        "description": "Fifty percent of all respondents said they would be more likely to shop at a company",
+        "done": false
+      },
+      {
+        "title": "Release v2.0.0",
+        "description": "Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM",
+        "done": false
+      },
+      {
+        "title": "Export the processed files",
+        "description": "The report also shows that consumers will not easily forgive a company once a breach exposing their personal data occurs.",
+        "done": false
+      },
+      {
+        "title": "Arival at export process",
+        "description": "Capitol Hill, Seattle, WA 12:34 AM",
+        "done": false
+      }
+    ]
+  },
+  "sidebar": {
+    "title": "KHIS",
+    "shortTitle": "CT",
+    "dashboard": "dashboard",
+    "icons": "Icons",
+    "maps": "Maps",
+    "notifications": "Notifications",
+    "userProfile": "Registration",
+    "tableList": "Employee Table",
+    "typography": "Typography",
+    "rtlSupport": "RTL Support"
+  }
+}
